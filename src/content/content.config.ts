@@ -7,7 +7,10 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+<<<<<<< HEAD
     body: z.string(),
+=======
+>>>>>>> b2a9929 (setting up recent posts)
     updatedDate: z.coerce.date().optional(),
   }),
 });
