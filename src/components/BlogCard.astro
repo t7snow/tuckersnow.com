@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+
+// Fetch and sort blog posts
+// const blogposts = await getCollection('blogposts');
+const { posts } = Astro.props;
+---
+
+<section class="blog-card">
+  <div class="blog-card-content">
+    {posts.map (post => (
+      <a href={`/blog/${post.slug}`} class="blog-card-link">
+        <h4 class="blog-card-title">{post.data.title}</h4>
+        <p class="blog-card-description">{post.data.description}</p>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+
+</style>
