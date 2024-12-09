@@ -3,10 +3,6 @@ title: "Sherlock Holmes and Mental Models"
 description: "On how pattern recognition and mental models build expertise."
 pubDate: "2024-12-01"
 updatedDate: "2024-12-05"
-<<<<<<< HEAD
-
-=======
->>>>>>> b2a9929 (setting up recent posts)
 ---
 
 
