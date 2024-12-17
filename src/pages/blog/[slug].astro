@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 import { getEntryBySlug } from 'astro:content';
+import { getEntry } from 'astro:content';
 
 //get the paths and create the paramaters 
 export async function getStaticPaths() {
@@ -14,12 +15,15 @@ export async function getStaticPaths() {
 }
 const { slug } = Astro.params;
 const blogPosts = await getCollection('blogposts');
-const post = await getEntryBySlug('blogposts', slug);
+const post = await getEntry('blogposts', slug);
 
 
 const { Content } = await post.render();
 ---
 
+<div class="prose prose-2xl overflow-visible relative">
+  <Content />
+</div>
 
-<Content />
+
 

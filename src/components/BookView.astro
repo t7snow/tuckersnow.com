@@ -1,6 +1,5 @@
 ---
 import { getCollection } from 'astro:content';
-import BlogCard from './BlogCard.astro';
 import BookCard from './BookCard.astro';
 
 // Fetch and sort blog posts
@@ -9,5 +8,7 @@ const bookposts = await getCollection('bookposts');
 ---
 <section>
   <h1>🧑‍💻 Book Notes</h2>
-    <BookCard posts={bookposts} />
+    {bookposts.map((post) => (
+      <BookCard post={post} />
+    ))}
 </section>

@@ -7,6 +7,13 @@ import { defineCollection, z } from 'astro:content';
 export const collections = {
   blogposts: defineCollection({
     schema: ({ image }) => z.object({
+      title: z.string(),
+      description: z.string(),
+      cover: image(),
+    })
+  }),
+  bookposts: defineCollection({
+    schema: ({ image }) => z.object({
       cover: image(),
     })
   }),

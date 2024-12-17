@@ -12,6 +12,7 @@ const recentBooks = bookposts
 <section>
   <h1> 📚 Recent Books</h2>
     <a href="/book">View all →</a>
-    <BookCard posts={recentBooks} />
-
+    {recentBooks.map((post) => (
+      <BookCard post={post} />
+    ))}
 </section>

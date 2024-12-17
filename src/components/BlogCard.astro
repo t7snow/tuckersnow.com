@@ -3,20 +3,16 @@ import { getCollection } from 'astro:content';
 import { Image } from 'astro:assets';
 
 const blogposts = await getCollection('blogposts');
+
+const { post } = Astro.props;
 ---
 
-<section class="blog-card">
+<section class="group mx-auto w-full rounded-xl px-4 py-3 transition duration-300 ease-in-out hover:bg-gray-800">
   <div class="blog-card-content">
-    {blogposts.map (post => (
-      <a href={`/blog/${post.slug}`} class="blog-card-link">
-        <Image  width={400}  src = {post.data.cover} alt=""/>
-      </a>
-      
-
-    ))}
+    <a href={`/blog/${post.slug}`} class="blog-card-link">
+      <h4 class="blog-card-title">{post.data.title}</h4>
+      <p class="blog-card-description">{post.data.description}</p>
+    </a>
   </div>
 </section>
 
-<style>
-
-</style>

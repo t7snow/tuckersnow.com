@@ -1,7 +1,7 @@
 ---
-
+title: "test title"
+description: "test description"
 cover: "./how_to_think_like_a_roman_emperor.jpg"
-
 ---
 
 
