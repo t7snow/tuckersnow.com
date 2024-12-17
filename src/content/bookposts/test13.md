@@ -1,6 +1,8 @@
 ---
-
-cover: "./how_to_think_like_a_roman_emperor.jpg"
+title: "Sherlock Holmes and Mental Models"
+description: "On how pattern recognition and mental models build expertise."
+pubDate: "2024-12-01"
+updatedDate: "2024-12-05"
 
 ---
 

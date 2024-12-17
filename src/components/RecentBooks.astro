@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import BlogCard from './BlogCard.astro';
+import BookCard from './BookCard.astro';
+
+// Fetch and sort blog posts
+const bookposts = await getCollection('bookposts');
+const recentBooks = bookposts
+.slice(0, 1); // Display only the 3 most recent posts
+
+---
+<section>
+  <h1> 📚 Recent Books</h2>
+    <a href="/book">View all →</a>
+    <BookCard posts={recentBooks} />
+
+</section>
