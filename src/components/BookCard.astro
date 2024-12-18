@@ -9,8 +9,9 @@ const { post } = Astro.props;
 
 <section class="blog-card">
   <div class="book-card-content">
-    <a href={`/book/${post.slug}`} class="book-card-link">
-      <Image  width={300}  src = {post.data.cover} alt=""/>
+    <a href={`/book/${post.slug}`} class="block h-full w-full overflow-hidden rounded-xl transition-shadow duration-150
+        ease-in-out hover:ring-2 hover:ring-offset-4 hover:ring-green-400 hover:ring-offset-[#111]">
+      <Image  width={156} height={249.6} src = {post.data.cover} alt=""/>
     </a>
   </div>
 </section>

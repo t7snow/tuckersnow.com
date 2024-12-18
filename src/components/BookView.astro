@@ -6,9 +6,12 @@ import BookCard from './BookCard.astro';
 const bookposts = await getCollection('bookposts');
  // Display only the 3 most recent posts
 ---
-<section>
-  <h1>🧑‍💻 Book Notes</h2>
+<section class="">
+  <h1 class="mb-4 text-5xl font-bold tracking-tight text-black ">🧑‍💻 Book Notes</h2>
+  <div class="my-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mx-auto w-full">
     {bookposts.map((post) => (
       <BookCard post={post} />
     ))}
+  </div>
+   
 </section>

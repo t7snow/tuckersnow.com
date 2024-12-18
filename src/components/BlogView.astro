@@ -7,8 +7,10 @@ const blogposts = await getCollection('blogposts');
  // Display only the 3 most recent posts
 ---
 <section>
-  <h1>🧑‍💻 Posts</h2>
+  <h1 class="mb-4 text-5xl font-bold tracking-tight text-black">🧑‍💻 Posts</h2>
+    <div class="my-12">
     {blogposts.map((post) => (
       <BlogCard post={post} />
     ))}
+    </div>
 </section>

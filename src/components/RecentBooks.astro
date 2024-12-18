@@ -6,13 +6,21 @@ import BookCard from './BookCard.astro';
 // Fetch and sort blog posts
 const bookposts = await getCollection('bookposts');
 const recentBooks = bookposts
-.slice(0, 1); // Display only the 3 most recent posts
+.slice(0, 3); // Display only the 3 most recent posts
 
 ---
-<section>
-  <h1> 📚 Recent Books</h2>
-    <a href="/book">View all →</a>
+
+<section class="my-12">
+  <div class="flex justify-between items-center mb-6">
+    <h3 class="text-2xl">📚 Recent Books</h2>
+    <div class="flex gap-2">
+      <a href="/blog" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded text-sm flex items-center">View all →</a>
+    </div>
+  </div>
+  <div class="my-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mx-auto w-full">
     {recentBooks.map((post) => (
       <BookCard post={post} />
     ))}
+  </div>
+  
 </section>
