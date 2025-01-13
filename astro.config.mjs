@@ -8,7 +8,8 @@ export default defineConfig({
 	redirects: {
     '/short/linkedin': 'https://www.linkedin.com/in/tucker-snow-8672ab20a/',
 		'/short/github': 'https://github.com/t7snow',
-		'/short/twitter': 'https://x.com/t7snow'
+		'/short/twitter': 'https://x.com/t7snow',
+		'/short/fable': 'https://fable.co/tucker-snow-404711274019'
   },
 	integrations: [tailwind()],
 });
