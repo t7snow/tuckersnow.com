@@ -1,11 +1,11 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width", initial-scale=1>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body class="bg-gray-300 text-gray-900">
-		<nav class="relative mx-auto flex w-full max-w-2xl items-center justify-between bg-opacity-60 pt-8 pb-8 border-gray-700 text-gray-100 sm:pb-16">
-			<div class="container  flex items-center justify-left ">
+		<nav class="relative mx-auto flex w-full max-w-2xl items-center justify-between bg-opacity-60 pt-8 pb-8 border-gray-700 text-gray-100 sm:pb-16 px-4 sm:px-8">
+			<div class="container flex items-center justify-left w-full">
 				<div class="flex space-x-6">
 					<a href="/" class="rounded-lg p-1 text-xl hover:bg-gray-200 sm:px-3 sm:py-2 sm:text-base font-semibold text-gray-900">Home</a>
 					<a href="/blog" class="rounded-lg p-1 text-xl hover:bg-gray-200 sm:px-3 sm:py-2 sm:text-base font-semibold text-gray-900">Blog</a>
@@ -13,8 +13,8 @@
 				</div>
 			</div>
 		</nav>
-		<main class="mx-auto w-full max-w-2xl">
-			<slot  />
+		<main class="mx-auto w-full max-w-2xl px-4 sm:px-8">
+			<slot></slot>
 		</main>
 	</body>
 </html>
