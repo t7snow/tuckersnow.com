@@ -2,21 +2,19 @@
 import { getCollection, getEntry } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
-// Generate the static paths for all posts in the 'bookposts' collection
 export async function getStaticPaths() {
   const bookPosts = await getCollection('bookposts');
   return bookPosts.map((post) => ({
-    params: { slug: post.slug }, // Map each post's slug to a URL parameter
+    params: { slug: post.slug }, 
   }));
 }
 
-// Fetch the specific post data based on the slug parameter
 const { slug } = Astro.params;
-const post = await getEntry('bookposts', slug); // Get the current post entry
-const { Content } = await post.render(); // Render the Markdown content
+const post = await getEntry('bookposts', slug); 
+const { Content } = await post.render(); 
 ---
 
-<!-- Use your layout and render the content -->
+
 <Layout>
   <main class="flex flex-col justify-center">
     <article class="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">

@@ -4,6 +4,7 @@ description: "Atomic Habits Summary"
 cover: "./atomic-habits.jpg"
 ---
 # Atomic Habits - James Clear
+##### Read 2025.01
 
 Atomic Habits by James Clear is a guide to break bad habits and create better ones. 
 
