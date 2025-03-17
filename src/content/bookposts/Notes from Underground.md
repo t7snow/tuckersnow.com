@@ -1,7 +1,7 @@
 ---
 title: "Notes from Underground"
 description: "Notes from Underground Notes"
-cover: "./notes-from-underground-cover.jpg"
+cover: "./notes-from-underground-cover.webp"
 ---
 
 # Notes from Underground - Dostoevsky
