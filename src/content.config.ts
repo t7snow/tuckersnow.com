@@ -17,6 +17,9 @@ export const collections = {
       title: z.string().optional(),
       description: z.string().optional(),
       cover: image(),
+      date: z.string().optional(),
+      author: z.string(),
+      tags: z.array(z.string()).optional(),
     })
   }),
 };

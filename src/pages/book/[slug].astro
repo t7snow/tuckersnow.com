@@ -18,7 +18,12 @@ const { Content } = await post.render();
 <Layout>
   <main class="flex flex-col justify-center">
     <article class="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-      <div class="prose prose-2xl overflow-visible relative">
+      <div class="mb-4">
+        <h1 class="text-3xl font-bold mb-1">{post.data.title}</h1>
+        {post.data.author && <div class="text-base text-gray-700 mb-1">by {post.data.author}</div>}
+        <!-- {post.data.date && <div class="text-sm text-gray-500 mb-2">{new Date(post.data.date).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}</div>} -->
+      </div>
+      <div class="prose prose-sm overflow-visible relative">
         <Content />
       </div>
     </article>

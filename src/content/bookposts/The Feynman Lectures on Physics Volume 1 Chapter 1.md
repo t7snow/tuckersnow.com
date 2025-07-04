@@ -2,6 +2,8 @@
 title: "The Feynman Lectures Vol.1"
 description: "Volume 1"
 cover: "./the-feynman-lectures.webp"
+author: "Feynman"
+tags: ["Non-Fiction"]
 ---
 
 

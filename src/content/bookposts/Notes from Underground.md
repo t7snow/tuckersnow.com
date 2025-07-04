@@ -2,6 +2,8 @@
 title: "Notes from Underground"
 description: "Notes from Underground Notes"
 cover: "./notes-from-underground-cover.webp"
+author: "Fyodor Dostoyevsky"
+tags: ["Fiction", "Classic"]
 ---
 
 # Notes from Underground - Dostoevsky
