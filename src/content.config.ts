@@ -9,10 +9,13 @@ export const collections = {
     schema: () => z.object({
       title: z.string().optional(),
       description: z.string().optional(),
+      date: z.string(),
     })
   }),
   bookposts: defineCollection({
     schema: ({ image }) => z.object({
+      title: z.string().optional(),
+      description: z.string().optional(),
       cover: image(),
     })
   }),

@@ -1,6 +1,7 @@
 ---
 title: "My Lifetime Reading List"
 description: "every single book i want to read in my lifetime..."
+date: "2025-06-07"
 ---
 
 

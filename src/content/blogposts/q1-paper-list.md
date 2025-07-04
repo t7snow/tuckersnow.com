@@ -1,6 +1,7 @@
 ---
 title: "2025 Q1 Paper Reading List"
 description: "my reading list by of papers"
+date: "2025-06-07"
 ---
 
 # 2025 Q1 Paper Reading List
