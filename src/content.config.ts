@@ -18,7 +18,7 @@ export const collections = {
       description: z.string().optional(),
       cover: image(),
       date: z.string().optional(),
-      author: z.string(),
+      author: z.string().optional(),
       tags: z.array(z.string()).optional(),
     })
   }),

@@ -1,7 +1,7 @@
 ---
 title: "Atomic Habits"
 description: "Atomic Habits Summary"
-cover: "./atomic-habits.jpg"
+cover: "atomic-habits.jpg"
 ---
 # Atomic Habits - James Clear
 ##### Read 2025.01
